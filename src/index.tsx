@@ -7,14 +7,6 @@ interface SecretProps {
     query: any;
 }
 
-function SecretRedirect(props: SecretProps) {
-
-    useEffect(() => {
-        Router.push(props, props.pathname);
-    }, [])
-
-
-    return null;
-}
+const SecretRedirect = (props: SecretProps) => Router.push(props, props.pathname)
 
 export default SecretRedirect;
